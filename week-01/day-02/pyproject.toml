@@ -1,0 +1,28 @@
+[project]
+name = "day-02"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Toluwani Olusanya", email = "olusanyatoluwani80@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=3.0.5",
+    "psycopg[binary,pool]>=3.3.4",
+    "sqlalchemy>=2.0.52",
+    "tqdm>=4.70.0",
+]
+
+[project.scripts]
+day-02 = "day_02:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "pgcli>=4.6.0",
+]
